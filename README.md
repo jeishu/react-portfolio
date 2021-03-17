@@ -42,7 +42,7 @@ Framework:
 
 Technologies:
 
-    Npm Sass-Loader, Npm Sass
+    Npm Sass-Loader, Npm Sass, Npm Styled-Components
 
 Deployment:
 
@@ -50,7 +50,9 @@ Deployment:
 
 ## Reference
 
+[James Q Quick](https://www.youtube.com/watch?v=yQf1KbGiwiI) has a video over how to set up React Router.
 
+[Fullstack Mastery](https://www.youtube.com/watch?v=GGkBwpxV7AI) taught me a new way to use CSS in React called [Styled-Component](https://styled-components.com/docs/basics).
 
 ## Contributors
 
