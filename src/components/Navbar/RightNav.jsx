@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from "react-router-dom";
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Ul = styled.ul`
     @media (max-width: 768px) {

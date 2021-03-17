@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400&display=swap');
+@use "../scss/font";
+@use "../scss/colors";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: font.$IBM-font;
+  background-color: colors.$background-color;
+
+}
+
+h1 {
+  font-family: font.$header-font;
 }
