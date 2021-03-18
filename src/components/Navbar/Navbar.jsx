@@ -9,9 +9,9 @@ function NavTabs() {
 
     return (
         <div className="nav-bar">
-            <div className="logo">
-                Jeremy Zhu
-            </div>
+            {/* <div className="logo">
+                JZ
+            </div> */}
             <Burger />
         </div>
     );

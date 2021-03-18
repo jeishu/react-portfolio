@@ -5,11 +5,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: font.$IBM-font;
+  font-family: font.$Open-font;
   background-color: colors.$background-color;
 
 }
 
 h1 {
   font-family: font.$header-font;
+}
+
+.intro {
+  font-family: font.$chinese-font;
+  span {
+    font-family: font.$Open-font;
+  }
 }

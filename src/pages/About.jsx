@@ -21,6 +21,8 @@ const About = () => {
         <AboutDiv>
             <h1>About Me</h1>
             <img src={profile} alt={profile}/>
+            <h2>Jeremy Zhu</h2>
+            <h4>Full Stack Developer</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum laborum vero laudantium delectus accusamus explicabo unde eaque voluptatem, debitis quisquam, quia, eligendi facere culpa porro impedit possimus. Quia, sunt?</p>
         </AboutDiv>
     )

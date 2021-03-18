@@ -6,7 +6,6 @@ const FooterDiv = styled.div`
     height: 50px;
     background-color: #acacac;
     text-align: left;
-    /* padding: 0em 1em; */
     display: flex;
     align-items: center;
     font-size: .7em;
