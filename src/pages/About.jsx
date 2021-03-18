@@ -9,7 +9,7 @@ const AboutDiv = styled.div`
     align-items: center;
     margin: 1rem 2rem;
 
-    img{
+    img {
         width: 200px;
         height: auto;
     }
