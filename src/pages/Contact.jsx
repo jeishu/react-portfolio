@@ -1,17 +1,19 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
+import Footer from "../components/Footer/Footer";
 
 const ContactsDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 2rem;
+    margin: 0rem 2rem;
+    height: 100vh;
     form {
         display: flex;
         flex-direction: column;
-        
+
         input, label {
 
         }
@@ -59,7 +61,10 @@ const ContactForm = () => {
 
 function Contact() {
     return (
+        <>
         <ContactForm />
+        <Footer />
+        </>
     );
 }
 export default Contact;

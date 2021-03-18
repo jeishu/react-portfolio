@@ -9,8 +9,6 @@ const FooterDiv = styled.div`
     display: flex;
     align-items: center;
     font-size: .7em;
-    position: absolute;
-    top: 100%;
 
     span {
         padding-left: 1em;
