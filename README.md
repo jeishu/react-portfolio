@@ -8,28 +8,18 @@ My React Portfolio
 
 ## Table of Contents
 
-* [Features](#Features)
 * [Links](#Links)
-* [Demo](#Demo)
 * [Technology](#Technology)
 * [Reference](#Reference)
 * [Contributors](#Contributors)
 * [Questions](#Questions)
 * [License](#License)
 
-## Features
-
-
 
 ## Links
 
-* Project Repo: [Repository]()
-* Deployed Application: []()
-
-## Demo
-
-<img src="">
-
+* Project Repo: [Repository](https://github.com/jeishu/react-portfolio)
+* Deployed Application: [Portfolio](https://jeremyzhu.herokuapp.com/)
 
 ## Technology
 
@@ -46,7 +36,7 @@ Technologies:
 
 Deployment:
 
-    Heroku
+    Heroku, Mars
 
 ## Reference
 
