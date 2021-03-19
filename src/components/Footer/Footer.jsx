@@ -9,17 +9,23 @@ const FooterDiv = styled.div`
     text-align: left;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: .9em;
 
     span {
         padding-left: 1em;
     }
-    img {
-        background-color: #cccccc;
-        width: 20px !important;
+    .socialContainer {
+        justify-content: space-evenly;
+        width: 100px;
+
+        a img {
+                background-color: #cccccc;
+                width: 20px !important;
+        }
     }
+    
 `;
 
 const Footer = () => {

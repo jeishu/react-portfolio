@@ -16,6 +16,14 @@ const ProjectsDiv = styled.div`
     align-items: center;
     margin: 0;
     height: 100vh;
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
 `;
 
 const Projects = () => {
@@ -60,8 +68,10 @@ const Projects = () => {
     return (
         <PorfolioContext.Provider value={projects}>
         <ProjectsDiv>
-            <h1>Projects</h1>
-            <Cards/>
+            <div className="projectContainer">
+                <h1>Projects</h1>
+                <Cards/>
+            </div>
             <Footer />
         </ProjectsDiv>
         </PorfolioContext.Provider>

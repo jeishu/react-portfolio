@@ -25,13 +25,12 @@ const SocialDiv = styled.div`
             }
         }
     } 
-    
 `;
 
 const Social = () => {
     return (
-        <SocialDiv>
-            <a href="https://www.instagram.com/jeremyishungry/"        target="_blank" rel="noreferrer">
+        <SocialDiv className="socialContainer">
+            <a href="https://www.instagram.com/jeremyishungry/" target="_blank" rel="noreferrer">
                 <img src={Instagram} alt={Instagram} />
             </a>
             <a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank" rel="noreferrer">
