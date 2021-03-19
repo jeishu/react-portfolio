@@ -6,18 +6,31 @@ import Footer from "../components/Footer/Footer";
 const ContactsDiv = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0rem 2rem;
+    margin: 0;
     height: 100vh;
-    form {
+    
+    .contactContainer {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
 
-        input, label {
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
 
+            input, textarea {
+                outline: none;
+                border: none;
+                margin-bottom: 1rem;
+            }
         }
     }
+    
 `;
 
 const ContactForm = () => {
@@ -27,34 +40,38 @@ const ContactForm = () => {
     }
     return (
         <ContactsDiv>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="email">
-                    Email Address: 
-                </label>
-                <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                />
-                <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                />
-                <textarea
-                    id="message"
-                    name="message"
-                />
-                <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                />
-                <button type="submit" disabled={state.submitting}>
-                    Submit
-            </button>
-            </form>
+            <div className="contactContainer">
+                <h1>Contact Me</h1>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="email">
+                        Email Address: 
+                    </label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                    <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                    />
+                    <textarea
+                        id="message"
+                        name="message"
+                    />
+                    <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                    />
+                    <button type="submit" disabled={state.submitting}>
+                        Submit
+                </button>
+                </form>
+            </div>
+            <Footer />
         </ContactsDiv>
     );
 }
@@ -63,7 +80,6 @@ function Contact() {
     return (
         <>
         <ContactForm />
-        <Footer />
         </>
     );
 }

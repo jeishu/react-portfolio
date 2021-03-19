@@ -31,13 +31,13 @@ const SocialDiv = styled.div`
 const Social = () => {
     return (
         <SocialDiv>
-            <a href="https://www.instagram.com/jeremyishungry/" target="_blank">
+            <a href="https://www.instagram.com/jeremyishungry/"        target="_blank" rel="noreferrer">
                 <img src={Instagram} alt={Instagram} />
             </a>
-            <a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank">
+            <a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank" rel="noreferrer">
                 <img src={Linkedin} alt={Linkedin} />
             </a>
-            <a href="https://github.com/jeishu" target="_blank" >
+            <a href="https://github.com/jeishu" target="_blank" rel="noreferrer">
                 <img src={Github} alt={Github} style={{borderRadius: "15px"}}/>
             </a>
         </SocialDiv>

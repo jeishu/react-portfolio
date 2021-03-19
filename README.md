@@ -54,6 +54,8 @@ Deployment:
 
 [Fullstack Mastery](https://www.youtube.com/watch?v=GGkBwpxV7AI) taught me a new way to use CSS in React called [Styled-Component](https://styled-components.com/docs/basics).
 
+My [Social Media](https://www.flaticon.com/packs/social-media-51) icons came this site.
+
 ## Contributors
 
 Using React as a base for coding. Sass was used in placed of CSS for styling, but essentially gives the same result, just personal preference. 
