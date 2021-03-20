@@ -4,7 +4,7 @@
 
 ## Description
 
-My React Portfolio
+My React Portfolio with mobile first design. Styling with SCSS no other CSS framework. 
 
 ## Table of Contents
 
