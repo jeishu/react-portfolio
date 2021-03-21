@@ -21,8 +21,8 @@ const FooterDiv = styled.div`
         width: 100px;
 
         a img {
-                background-color: #cccccc;
-                width: 20px !important;
+            background-color: #cccccc;
+            width: 20px !important;
         }
     }
     
