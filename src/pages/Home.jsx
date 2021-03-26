@@ -26,6 +26,14 @@ const HomeDiv = styled.div`
         .desc2 {
             margin-bottom: 2em;
         }
+        .name {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .misc {
+            font-weight: bold;
+        }
+
     }
 `;
 
@@ -36,9 +44,10 @@ const Home = () => {
             <HomeDiv>
                 <div className="infoContainer">
                     <h1 className="intro">你好! <span>Welcome!</span></h1>
-                    <p>I am <span>Jeremy</span>, Full Stack Developer and Photographer.</p>
+                    <p>I am <span className="name">Jeremy</span>, <span className="misc">Full Stack Developer</span>  and <span className="misc">Photographer</span> with a passion for Web Design.</p>
                     <p className="desc2">I strive to learn and improve my skills every day.</p>
                     <Social />
+                    {/* <p>Check out more of my works</p> */}
                 </div>
 
                 <Footer />

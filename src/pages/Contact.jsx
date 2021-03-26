@@ -26,7 +26,16 @@ const ContactsDiv = styled.div`
             input, textarea {
                 outline: none;
                 border: none;
-                margin-bottom: 1rem;
+                margin: .25rem auto 1rem;
+                width: 280px;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+            textarea {
+                height: 150px;
+            }
+            button {
+                cursor: pointer;
             }
         }
     }
@@ -68,7 +77,7 @@ const ContactForm = () => {
                     />
                     <button type="submit" disabled={state.submitting}>
                         Submit
-                </button>
+                    </button>
                 </form>
             </div>
             <Footer />
