@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 import Footer from "../components/Footer/Footer";
+import ContactCard from "../components/ContactCard/index";
 
 const ContactsDiv = styled.div`
     display: flex;
@@ -22,6 +23,8 @@ const ContactsDiv = styled.div`
             display: flex;
             flex-direction: column;
             width: 300px;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(121, 121, 121, 0.261);
 
             input, textarea {
                 outline: none;
@@ -43,6 +46,7 @@ const ContactsDiv = styled.div`
 `;
 
 const ContactForm = () => {
+
     const [state, handleSubmit] = useForm("xjvpnqgl");
     if (state.succeeded) {
         return <p>Thank you for contacting me! You will get a reply very soon.</p>;
@@ -53,7 +57,7 @@ const ContactForm = () => {
                 <h1>Contact Me</h1>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="email">
-                        Email Address: 
+                        Email Address:
                     </label>
                     <input
                         id="email"
@@ -79,6 +83,7 @@ const ContactForm = () => {
                         Submit
                     </button>
                 </form>
+                <ContactCard/>
             </div>
             <Footer />
         </ContactsDiv>
@@ -88,7 +93,7 @@ const ContactForm = () => {
 function Contact() {
     return (
         <>
-        <ContactForm />
+            <ContactForm />
         </>
     );
 }

@@ -1,0 +1,23 @@
+@use "../../scss/mixins" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/font" as *;
+
+.contactCard {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: .3rem 0;
+
+        i {
+            margin: 0 .5rem 0;
+        }
+        a {
+            text-decoration: none;
+            list-style: none;
+            @include animate-underline-left;
+            color: black;
+        }
+    }
+}
