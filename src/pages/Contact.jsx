@@ -17,7 +17,10 @@ const ContactsDiv = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin: 0rem 1rem 0rem;
+        @media (min-width: 768px) {
+            margin: 5rem 1rem 0rem;
+        }
 
         form {
             display: flex;
@@ -42,7 +45,6 @@ const ContactsDiv = styled.div`
             }
         }
     }
-    
 `;
 
 const ContactForm = () => {

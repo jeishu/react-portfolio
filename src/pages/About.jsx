@@ -17,13 +17,16 @@ const AboutDiv = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin: 0rem 1rem 0rem;
+        @media (min-width: 768px) {
+            margin: 5rem 1rem 0rem;
+        }
 
         .infoContainer {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             height: 100%;
             width: 100%;
             @media (min-width: 768px){
@@ -37,9 +40,10 @@ const AboutDiv = styled.div`
             .info {
                 h2, h4 {
                     text-align: center;
+                    margin: 0 0 .5rem;
                 }
                 p {
-                    margin: 2rem;
+                    margin: 0 2rem;
                     max-width: 500px;
                 }
             }

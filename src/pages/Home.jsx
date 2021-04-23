@@ -17,7 +17,10 @@ const HomeDiv = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin: 2rem 1rem 0rem;
+        @media (min-width: 768px) {
+            margin: 5rem 1rem 0rem;
+        }
         
         h1 {
             font-size: 3rem;
@@ -32,6 +35,9 @@ const HomeDiv = styled.div`
         }
         .misc {
             font-weight: bold;
+        }
+        p {
+            text-align: center;
         }
 
     }
