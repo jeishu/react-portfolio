@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Social from "../components/Social/Social";
 import Footer from "../components/Footer/Footer";
+import "./home.scss";
 
 const HomeDiv = styled.div`
 
@@ -25,7 +26,12 @@ const HomeDiv = styled.div`
         h1 {
             font-size: 3rem;
         }
-
+        p {
+            text-align: center;
+        }
+        h2.home-projects {
+            font-size: 1.5rem;
+        }
         .desc2 {
             margin-bottom: 2em;
         }
@@ -36,10 +42,11 @@ const HomeDiv = styled.div`
         .misc {
             font-weight: bold;
         }
-        p {
-            text-align: center;
+        .line-border{
+            padding: 1rem;
+            border-bottom: 1px rgba(0, 0, 0, 0.165) solid;
+            width: 80%;
         }
-
     }
 `;
 
@@ -53,9 +60,9 @@ const Home = () => {
                     <p>I am <span className="name">Jeremy</span>, <span className="misc">Full Stack Developer</span>  and <span className="misc">Photographer</span> with a passion for Web Design.</p>
                     <p className="desc2">I strive to learn and improve my skills every day.</p>
                     <Social />
-                    {/* <p>Check out more of my works</p> */}
+                    <div className="line-border"></div>
+                    <h2 className="home-projects">Check out my projects</h2>
                 </div>
-
                 <Footer />
             </HomeDiv>
         </>

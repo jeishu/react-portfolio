@@ -31,7 +31,7 @@ const FooterDiv = styled.div`
 const Footer = () => {
     return (
         <FooterDiv>
-            <span style={{color: "rgb(255, 255, 255)"}}>Jeremy Zhu © 2020</span>
+            <span style={{color: "rgb(255, 255, 255)"}}>Jeremy Zhu © 2021</span>
             <Social/>
         </FooterDiv>
     )
