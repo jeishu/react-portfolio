@@ -29,9 +29,7 @@ const HomeDiv = styled.div`
         p {
             text-align: center;
         }
-        h2.home-projects {
-            font-size: 1.5rem;
-        }
+        
         .desc2 {
             margin-bottom: 2em;
         }
@@ -44,8 +42,24 @@ const HomeDiv = styled.div`
         }
         .line-border{
             padding: 1rem;
-            border-bottom: 1px rgba(0, 0, 0, 0.165) solid;
+            /* border-bottom: 1px rgba(0, 0, 0, 0.165) solid; */
             width: 80%;
+        }
+    }
+    .info-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(186, 186, 186);
+        width: 100%;
+        height: 100%;
+        
+        @media (min-width: 768px) {
+            margin: 5rem 1rem 0rem;
+        }
+        h2.home-projects {
+            font-size: 1.5rem;
         }
     }
 `;
@@ -61,8 +75,16 @@ const Home = () => {
                     <p className="desc2">I strive to learn and improve my skills every day.</p>
                     <Social />
                     <div className="line-border"></div>
+                </div>
+                {/* <div className="info-projects">
                     <h2 className="home-projects">Check out my projects</h2>
                 </div>
+                <div>
+                    <h2>Experience</h2>
+                </div>
+                <div>
+                    <h2>About</h2>
+                </div> */}
                 <Footer />
             </HomeDiv>
         </>
