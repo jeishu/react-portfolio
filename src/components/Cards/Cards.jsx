@@ -3,65 +3,29 @@ import styled from 'styled-components';
 import Code from "../../img/social/programming.svg";
 import Deploy from "../../img/social/rocket.svg";
 import PorfolioContext from "../../utils/PortfolioContext";
+import "./index.scss";
 
-const CardDiv = styled.div`
-    
-    .card {
-        display: flex;
-        flex-direction: row;
-        margin: 1rem;
-        width: 330px;
-        height: 100px;
-        border: 1px solid black;
-        border-radius: 10px;
-
-        .projectImage {
-            margin: .5rem;
-            border-radius: 10px;
-        }
-
-        .info {
-            h2 {
-                margin: 0;
-                font-size: 1.2rem;
-            }
-            p {
-                margin: 0;
-                font-size: 0.8rem;
-            }
-            .linkContainer {
-                display: flex;
-                flex-direction: row;
-                width: 50px;
-                height: auto;
-                margin: .5rem;
-
-                a {
-                    text-decoration: none;
-                    margin: .2rem;
-                    .linkImage {
-                        width: 15px;
-                        height: auto;
-                    }
-                }
-            } 
-        }
-         
-    }
-`;
+const CardDiv = styled.div``;
 
 const Cards = () => {
     const data = useContext(PorfolioContext);
 
     return (
-        <CardDiv>
-            {data.map(({ name, repo, deploy, image, description }) => {
+        <CardDiv className="cardDiv">
+            {data.map(({ name, repo, deploy, image, description, role }) => {
                 return (
                     <div className="card">
-                        <img src={image} alt={image} className="projectImage" />
+
+                        <div className="image">
+                            <img src={image} alt={image} className="projectImage" />
+                        </div>
+                        
                         <div className="info">
                             <h2>{name}</h2>
-                            <p>{description}</p>
+                            <div className="infoBox">
+                                <p><span>Description: </span>{description}</p>
+                                <p><span>Role: </span>{role}</p>
+                            </div>
                             <div className="linkContainer">
                                 <a href={repo} target="_blank" rel="noreferrer">
                                     <img className="linkImage" src={Code} alt={Code} />
@@ -74,7 +38,6 @@ const Cards = () => {
                     </div>
                 )
             })}
-
         </CardDiv>
     )
 }

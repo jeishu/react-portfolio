@@ -1,93 +1,36 @@
 import React from 'react';
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Social from "../components/Social/Social";
 import Footer from "../components/Footer/Footer";
-import "./home.scss";
+import "./scss/home.scss";
 
-const HomeDiv = styled.div`
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
-    
-    .infoContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 1rem 0rem;
-        @media (min-width: 768px) {
-            margin: 5rem 1rem 0rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-        }
-        p {
-            text-align: center;
-        }
-        
-        .desc2 {
-            margin-bottom: 2em;
-        }
-        .name {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        .misc {
-            font-weight: bold;
-        }
-        .line-border{
-            padding: 1rem;
-            /* border-bottom: 1px rgba(0, 0, 0, 0.165) solid; */
-            width: 80%;
-        }
-    }
-    .info-projects{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: rgb(186, 186, 186);
-        width: 100%;
-        height: 100%;
-        
-        @media (min-width: 768px) {
-            margin: 5rem 1rem 0rem;
-        }
-        h2.home-projects {
-            font-size: 1.5rem;
-        }
-    }
-`;
+const HomeDiv = styled.div``;
 
 const Home = () => {
+    const location = useLocation();
 
     return (
-        <>
-            <HomeDiv>
-                <div className="infoContainer">
-                    <h1 className="intro">你好! <span>Welcome!</span></h1>
-                    <p>I am <span className="name">Jeremy</span>, <span className="misc">Full Stack Developer</span>  and <span className="misc">Photographer</span> with a passion for Web Design.</p>
-                    <p className="desc2">I strive to learn and improve my skills every day.</p>
-                    <Social />
-                    <div className="line-border"></div>
-                </div>
-                {/* <div className="info-projects">
-                    <h2 className="home-projects">Check out my projects</h2>
-                </div>
-                <div>
-                    <h2>Experience</h2>
-                </div>
-                <div>
-                    <h2>About</h2>
-                </div> */}
-                <Footer />
-            </HomeDiv>
-        </>
+        <HomeDiv className="homeDiv">
+            <div className="infoContainer">
+                <h1 className="intro">你好! <span>Welcome!</span></h1>
+                <p>I am <span className="name">Jeremy</span>, <span className="misc">Full Stack Developer</span>  and <span className="misc">Photographer</span> with a passion for Web Design.</p>
+                <p className="desc2">I strive to learn and improve my skills every day.</p>
+                <Social />
+                <Link
+                    to="/contact"
+                    id="contactHomeBtn"
+                    className={location.pathname === "/contact"}>
+                    Contact Me
+                </Link>
+                <div className="line-border"></div>
+            </div>
+            {/* <div className="info-projects">
+                <h2>What do I do?</h2>
+
+            </div> */}
+            <Footer />
+        </HomeDiv>
     )
 }
 

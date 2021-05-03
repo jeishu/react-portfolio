@@ -1,0 +1,58 @@
+.aboutDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+
+    .aboutContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 1rem 0rem;
+        @media (min-width: 768px) {
+            margin: 5rem 1rem 0rem;
+        }
+
+        .infoContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            @media (min-width: 768px){
+                flex-direction: row;
+
+                .info {
+                    width: 300px;
+                }
+            }
+
+            .info {
+                h2, h4 {
+                    text-align: center;
+                    margin: 0 0 .5rem;
+                }
+                p {
+                    margin: 0 2rem;
+                    max-width: 500px;
+                }
+            }
+            
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+        .infoContainer2 {
+            p {
+                margin: 0 2rem;
+                max-width: 500px;
+            }
+        }
+    }
+}
